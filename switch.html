@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./bootstrap-switch/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
+  <script src="./jquery.js"></script>
+  <script src="./bootstrap-switch/js/bootstrap-switch.js"></script>
+  <title>Document</title>
+</head>
+<body style="padding: 50px;">
+  <input type="checkbox" name="my-checkbox" checked><br>
+  <input type="checkbox" name="my-checkbox1" checked><br>
+<script>
+  $("[name='my-checkbox1']").bootstrapSwitch();
+  $('input[name="my-checkbox"]').bootstrapSwitch({
+          "onColor" : "success",
+          "offColor" : "success",
+          "onText" : "男",
+          "offText" : "女"
+      });
+      $('input[name="my-checkbox"]').bootstrapSwitch('state')
+      $('input[name="my-checkbox"]').bootstrapSwitch('state', true, true);
+</script>
+</body>
+</html>
